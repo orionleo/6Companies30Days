@@ -13,9 +13,9 @@ using namespace std;
 
 string getHint(string secret, string guess)
 {
-    int aCnt = 0;
-    int bCnt = 0;
-    vector<int> s(10,0),g(10,0);
+    int aCnt = 0;//for cows
+    int bCnt = 0;//for bulls
+    vector<int> s(10,0),g(10,0);//for bulls, s is for secret and g is for guess
 
     if(secret.size()!=guess.size()||secret.empty()) return "0A0B";
 
